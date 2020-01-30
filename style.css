@@ -10,7 +10,7 @@ body{
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     background-image: 
     linear-gradient(
           rgba(0, 0, 0, 0.7), 
@@ -20,33 +20,35 @@ body{
 
 #welcome{
     text-align: center;
-    color: #115EAB;
+    color: whitesmoke;
     display: inline-block;
-    width: 60vw;
+    width: 50vw;
 }
 
 #gl{
     text-align: center;
     color: aqua;
     display: inline-block;
-    width: 60vw;
+    width: 50vw;
+    font-size: 20px;
 }
 
 .pic-btn{
     background-color :wheat;
     border-radius: 10px;
     padding : 5px;
-    border-width: 0;
+    border-width: 2px;
     margin: 10px;
     
 }
+
 
 .main2{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
-    width: 60vw;
+    width: 50vw;
     border-radius: 30px;
 
 }
@@ -55,10 +57,29 @@ body{
     display: inline-block;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 50vw;
     height: 80vh;
     border-radius: 30px;
 
+}
+
+#ready{
+    color:red;
+    text-align: center;
+    position: absolute;
+    margin-top: 30vh;
+    background-color:whitesmoke;
+    padding: 20px;
+    border-width: 0;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 2px;
+}
+#go{
+    color:red;
+    text-align: center;
+    position: absolute;
+    margin-top: 30vh;
+    font-size: 60px;
 }
 
 .container{
@@ -74,6 +95,9 @@ body{
 
 .cat-img{
     border-radius: 10px;
+}
+.pic-btn:hover{
+    border-color: tomato;
 }
 
 .menu-btn{
@@ -126,4 +150,34 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.close-pic{
+    
+}
+
+#congrats{
+    background-color: thistle;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 80px;
+    width: 100%;
+}
+
+.congratsscreen{
+    position: absolute;
+    margin-top: 30vh;
+   
+}
+
+#reset{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.congratsmenu{
+    text-align: center;
 }
