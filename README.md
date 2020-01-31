@@ -3,7 +3,7 @@
 
 ## Thanks for the mewwmory
 
-[![alt text](img/catreadme.jpg "Logo Title Text 1")](prmzk.github.io)
+[![alt text](img/catreadme.jpg "Logo Title Text 1")](http://prmzk.github.io)
 Do you love cats?
 Everyone surely love cats!
 They are **furry** and **adorable**
