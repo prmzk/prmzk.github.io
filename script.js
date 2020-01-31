@@ -147,9 +147,9 @@ function selectCard(e){
     
     if(!NumberOfCat){
         if(Math.floor(detikTotal / 60) === 0){
-            document.getElementById('reset').innerText = `You won! \nClicking ${clikcCount} times and your time was ${(detikTotal % 60)} seconds\nHit F5 to play again!`
+            document.getElementById('reset').innerText = `You won! \nYou clicked ${clikcCount} times and your time was ${(detikTotal % 60)} seconds\nHit F5 to play again!`
         }else{
-            document.getElementById('reset').innerText = `You won! \nClicking ${clikcCount} times and your time was ${Math.floor(detikTotal / 60)} minutes and ${(detikTotal % 60)} seconds\nHit F5 to play again!`
+            document.getElementById('reset').innerText = `You won! \nYou clicked ${clikcCount} times and your time was ${Math.floor(detikTotal / 60)} minute and ${(detikTotal % 60)} seconds\nHit F5 to play again!`
         }
         gameMenu.classList.add('hide');
         congratsMenu.classList.remove('hide');
