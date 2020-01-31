@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
 }
 
 body{
@@ -36,7 +37,7 @@ body{
 .pic-btn{
     background-color :wheat;
     border-radius: 10px;
-    padding : 5px;
+    padding : 0;
     border-width: 2px;
     margin: 10px;
     
@@ -189,4 +190,5 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
+    
   }

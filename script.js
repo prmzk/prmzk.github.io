@@ -12,6 +12,9 @@ const resetButton  = document.getElementById("reset");
 var menit = document.getElementById("minutes");
 var detik = document.getElementById("seconds");
 var detikTotal = 0;
+var sfxAngry = new Audio('sfx/catangry.mp3');
+var sfxHappy = new Audio('sfx/cathappy.mp3');
+var endSong = new Audio('sfx/endsong.mp3')
 
 const hardNum = 6;
 const easyNum = 4;
@@ -128,8 +131,10 @@ function selectCard(e){
         document.getElementById(`${whichFirstCat}${firstCardSelected.id[2]}button`).removeEventListener('click', selectCard);
         document.getElementById(`${whichCat}${cardSelected.id[2]}button`).removeEventListener('click', selectCard);
         firstCardSelected = 0;
+        sfxHappy.play();
         NumberOfCat--;
     }else{
+        sfxAngry.play();
         setTimeout(function(){
             firstCardSelected.src = 'img/catx.png';
             cardSelected.src = 'img/catx.png';
@@ -142,12 +147,13 @@ function selectCard(e){
     
     if(!NumberOfCat){
         if(Math.floor(detikTotal / 60) === 0){
-            document.getElementById('reset').innerText = `Anda berhasil menang dengan ${clikcCount} kali klik\nDengan waktu ${(detikTotal % 60)} detik\n Refresh untuk bermain lagi`
+            document.getElementById('reset').innerText = `You won! \nClicking ${clikcCount} times and your time was ${(detikTotal % 60)} seconds\nHit F5 to play again!`
         }else{
-            document.getElementById('reset').innerText = `Anda berhasil menang dengan ${clikcCount} kali klik\nDengan waktu ${Math.floor(detikTotal / 60)} menit dan ${(detikTotal % 60)} detik\n Refresh untuk bermain lagi`
+            document.getElementById('reset').innerText = `You won! \nClicking ${clikcCount} times and your time was ${Math.floor(detikTotal / 60)} minutes and ${(detikTotal % 60)} seconds\nHit F5 to play again!`
         }
         gameMenu.classList.add('hide');
-        congratsMenu.classList.remove('hide');       
+        congratsMenu.classList.remove('hide');
+        endSong.play();      
     }
     
     
